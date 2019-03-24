@@ -9,6 +9,3 @@ gaussianNoise_samples_10 = GaussianNoise_generator([0, 1], 10);
 
 % plot gaussian noise samples
 plot(gaussianNoise_samples_10.x, gaussianNoise_samples_10.y, 'o'), hold on;
-
-% save variables for Question2.m
-save('gaussianNoise10.mat', 'gaussianNoise_samples_10');
