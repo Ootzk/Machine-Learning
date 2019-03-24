@@ -1,0 +1,13 @@
+range = [0, 1];
+numberOf_samples = 10;
+
+x = linspace(range(1), range(2));
+plot(x, sin(2 * pi * x), 'g'), hold on;
+
+x_gaussianNoise_samples = linspace(range(1), range(2), numberOf_samples);
+y_gaussianNoise_samples = awgn(sin(2 * pi * x_gaussianNoise_samples)
+plot(x_gaussianNoise_samples, awgn(sin(2 * pi * x_gaussianNoise_samples), 10), 'o'), ylim([-1.5, 1.5]), hold on;
+
+title('Question 1'), xlabel('x'), ylabel('y');
+
+save(x_
