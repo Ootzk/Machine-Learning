@@ -14,7 +14,6 @@ plot(gaussianNoise_samples_100.x, gaussianNoise_samples_100.y, 'o'), hold on;
 for order = [1, 3, 5, 9]
     regression_line = RegressionLine_generator([0, 1], gaussianNoise_samples_100, order);
     plot(regression_line.x, regression_line.y, '--'), hold on;
-    clear regression_line; clear order;
 end
 
 % show legend
